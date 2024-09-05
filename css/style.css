@@ -86,6 +86,25 @@ html {
   width: 50%;
 }
 
+/*smallproduct*/
+.smallproduct {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 2px solid #585656;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.smallproduct img {
+  width: 50%;
+  height: 100px;
+}
+
 /*ProductList*/
 .productlist main {
   display: grid;
