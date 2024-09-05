@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Templates Unveiled: From Static to Dynamic Web Experiences</title>
+</head>
+
+<body>
+    <header class="mainNav">
+        <a href="index.html">
+            <h1>Fashion<span>R</span>Us</h1>
+        </a>
+        <nav>
+            <a href="#">Categories</a>
+            <a href="category.html">Brands</a>
+            <a href="#">Seasons</a>
+        </nav>
+    </header>
+
+
+    <!-- //*****his code starts from here 1 line**/// -->
+    <main>
+        <div>
+            <h1>Categories</h1>
+
+            <!--////***********///*************troels added here first step 1 2nd line -->
+            <ul id="categoryList" class="categorylist"></ul>
+
+            <h2>Product List</h2>
+
+            <template id="productTemplate">
+                <li>
+                    <div class="flex">
+                        <div>
+                            <p><strong>Category:</strong> <span class="category"></span></p>
+                            <p><strong>Price:</strong> <span class="price"></span></p>
+                            <p><strong>Brand:</strong> <span class="brand"></span></p>
+                            <a id="seemore" href="">See more</a>
+                        </div>
+                        <div id="soldoutLabel" class="hidden">UDSOLGT</div>
+                    </div>
+                    <img src="" />
+                </li>
+            </template>
+
+            <!-- TEMPLATE RENDER CONTAINER -->
+        </div>
+        <div>
+            <ul id="productContainer" class="productContainer"></ul>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="category.js"></script>
+</body>
+
+</html>
